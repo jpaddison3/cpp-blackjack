@@ -3,13 +3,10 @@
 // everything else
 
 int main() {
-    int rank;
-    int suit;
-    // cout is using-decalred in blackjack.h
     cout << "Hello world!" << endl;
-    rank = 1;
-    suit = 2;
-    result = add(&rank, suit);
-    cout << "I got a " << result << " and rank = " << rank << endl;
+    Card card;
+    card.rank = 1;
+    card.suit = 's';
+    cout << "I got a " << card.string_repr() << endl;
     return 0;
 }

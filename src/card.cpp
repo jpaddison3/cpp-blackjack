@@ -1,11 +1,5 @@
 #include "card.h"
 
-int add(int *x, int y) {
-    // We're gonna use a pointer to x to use side effects in this example
-    int ret = *x + y;
-    // You can get the pointer itself with x
-    cout << "Where is x? " << hex << x << dec << endl;
-    *x = 5;
-    return ret;
-
+string Card::string_repr() {
+    return to_string(rank) + suit;
 }
